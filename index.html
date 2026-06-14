@@ -53,7 +53,6 @@
             overflow-x: hidden;
         }
 
-        /* شاشة التحميل المتطورة */
         .loading-screen {
             position: fixed;
             top: 0;
@@ -65,7 +64,7 @@
             justify-content: center;
             align-items: center;
             z-index: 9999;
-            transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), cubic-bezier(0.25, 1, 0.5, 1);
+            transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         .loader-container {
@@ -131,7 +130,6 @@
             font-weight: bold;
         }
 
-        /* شاشة اختيار نوع المستخدم */
         .user-type-screen {
             position: fixed;
             top: 0;
@@ -190,9 +188,7 @@
             border-color: rgba(93, 162, 236, 0.3);
         }
 
-        .user-type-card:hover::before {
-            opacity: 0.03;
-        }
+        .user-type-card:hover::before { opacity: 0.03; }
 
         .user-type-card .icon-wrapper {
             font-size: 5rem;
@@ -205,9 +201,7 @@
             z-index: 1;
         }
 
-        .user-type-card:hover .icon-wrapper {
-            transform: scale(1.15) rotate(5deg);
-        }
+        .user-type-card:hover .icon-wrapper { transform: scale(1.15) rotate(5deg); }
 
         .user-type-card h3 {
             font-size: 2.2rem;
@@ -224,12 +218,10 @@
             z-index: 1;
         }
 
-        /* حاويات العرض الأساسية مع تأثير الأنيميشن */
         .section-animate {
             animation: fadeInUp 0.5s cubic-bezier(0.25, 1, 0.5, 1) both;
         }
 
-        /* هيدر المنصة */
         .header {
             background: var(--bg-card);
             border-radius: 24px;
@@ -276,7 +268,6 @@
             gap: 20px;
         }
 
-        /* الأزرار التفاعلية */
         .portal-indicator-btn {
             background: rgba(255, 255, 255, 0.04);
             color: var(--text-light);
@@ -317,7 +308,6 @@
 
         .logout-header-btn:active { transform: translateY(-1px); }
 
-        /* حكمة وقيمة */
         .wisdom-bar {
             background: var(--bg-card);
             border-radius: 18px;
@@ -335,7 +325,6 @@
             margin-left: 8px;
         }
 
-        /* شبكة الميزات الرائعة */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -368,9 +357,7 @@
             transition: transform 0.3s ease;
         }
 
-        .feature-card:hover .feature-icon-wrapper {
-            transform: scale(1.2) rotate(-5deg);
-        }
+        .feature-card:hover .feature-icon-wrapper { transform: scale(1.2) rotate(-5deg); }
 
         .feature-card h3 {
             font-size: 1.6rem;
@@ -385,7 +372,6 @@
             line-height: 1.5;
         }
 
-        /* التحدي الرياضي اليومي المتفاعل */
         .daily-challenge {
             background: var(--bg-card);
             border-radius: 24px;
@@ -412,14 +398,9 @@
             gap: 10px;
         }
 
-        .challenge-badge i {
-            animation: pulseGlow 1.5s infinite alternate;
-        }
+        .challenge-badge i { animation: pulseGlow 1.5s infinite alternate; }
 
-        .challenge-levels {
-            display: flex;
-            gap: 10px;
-        }
+        .challenge-levels { display: flex; gap: 10px; }
 
         .challenge-level-btn {
             background: rgba(255,255,255,0.03);
@@ -432,10 +413,7 @@
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        .challenge-level-btn:hover {
-            background: rgba(255,255,255,0.08);
-            color: white;
-        }
+        .challenge-level-btn:hover { background: rgba(255,255,255,0.08); color: white; }
 
         .challenge-level-btn.active {
             background: var(--gradient-accent);
@@ -464,10 +442,7 @@
             animation: pulseBorder 2s infinite alternate;
         }
 
-        .challenge-input-group {
-            display: flex;
-            gap: 15px;
-        }
+        .challenge-input-group { display: flex; gap: 15px; }
 
         .challenge-input {
             flex: 1;
@@ -506,7 +481,6 @@
 
         .challenge-submit-btn:active { transform: scale(0.98); }
 
-        /* لوحة تحكم المسؤول */
         .admin-dashboard {
             background: var(--bg-card);
             border-radius: 28px;
@@ -554,21 +528,10 @@
             transition: transform 0.3s ease;
         }
 
-        .stat-card:hover .stat-number {
-            transform: scale(1.1);
-        }
+        .stat-card:hover .stat-number { transform: scale(1.1); }
+        .stat-label { color: var(--text-muted); font-size: 1rem; }
 
-        .stat-label {
-            color: var(--text-muted);
-            font-size: 1rem;
-        }
-
-        .quick-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 35px;
-        }
+        .quick-actions { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 35px; }
 
         .quick-btn {
             background: rgba(255,255,255,0.03);
@@ -605,7 +568,6 @@
             box-shadow: 0 5px 15px rgba(255, 183, 3, 0.3);
         }
 
-        /* نافذة تسجيل الدخول الباهرة */
         .login-container {
             position: fixed;
             top: 0;
@@ -693,7 +655,6 @@
 
         .close-login:hover { color: var(--danger); transform: rotate(90deg); }
 
-        /* كتل القوائم وعناصر المحتوى المشتركة */
         .content-list {
             background: var(--bg-card);
             border-radius: 24px;
@@ -702,12 +663,7 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
-        .search-bar {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
-        }
+        .search-bar { display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; }
 
         .search-bar input, .search-bar select {
             padding: 14px;
@@ -719,15 +675,12 @@
             transition: all 0.3s;
         }
 
-        .search-bar input:focus, .search-bar select:focus {
-            border-color: #2575fc;
-            outline: none;
-        }
+        .search-bar input:focus, .search-bar select:focus { border-color: #2575fc; outline: none; }
 
         .items-grid {
             display: grid;
             gap: 15px;
-            max-height: 500px;
+            max-height: 600px;
             overflow-y: auto;
             padding-right: 5px;
         }
@@ -751,11 +704,7 @@
             border-color: rgba(37, 117, 252, 0.15);
         }
 
-        .item-title {
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 6px;
-        }
+        .item-title { font-weight: bold; font-size: 1.1rem; margin-bottom: 6px; }
 
         .item-meta {
             font-size: 0.85rem;
@@ -763,6 +712,7 @@
             display: flex;
             gap: 20px;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .file-link {
@@ -798,13 +748,7 @@
             box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
         }
 
-        /* ألسنة التبديل للمستويات الفوقية */
-        .levels-tabs {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
-        }
+        .levels-tabs { display: flex; gap: 12px; margin-bottom: 25px; flex-wrap: wrap; }
 
         .level-tab {
             padding: 10px 22px;
@@ -826,7 +770,6 @@
             box-shadow: 0 4px 12px rgba(37, 117, 252, 0.3);
         }
 
-        /* النوافذ المنبثقة التفاعلية */
         .modal {
             display: none;
             position: fixed;
@@ -883,7 +826,7 @@
         .file-upload-area {
             border: 2px dashed #2575fc;
             border-radius: 14px;
-            padding: 35px;
+            padding: 30px;
             text-align: center;
             cursor: pointer;
             background: rgba(37, 117, 252, 0.02);
@@ -909,7 +852,6 @@
         }
         .submit-btn:hover { box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4); }
 
-        /* شاشات الاختبارات */
         .quiz-screen { background: var(--bg-card); border-radius: 24px; padding: 35px; margin-top: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); }
         .quiz-header { display: flex; justify-content: space-between; padding-bottom: 20px; border-bottom: 2px solid rgba(255,255,255,0.05); margin-bottom: 30px; }
         .quiz-timer { font-size: 1.6rem; font-weight: bold; color: var(--danger); animation: blink 1s infinite alternate; }
@@ -947,7 +889,6 @@
         .quiz-result { text-align: center; padding: 50px 30px; }
         .score { font-size: 4rem; font-weight: 900; color: var(--success); margin: 25px 0; animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
-        /* تنبيهات النظام */
         .alert { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); padding: 14px 30px; border-radius: 50px; z-index: 1100; font-weight: 500; box-shadow: 0 10px 30px rgba(0,0,0,0.4); animation: slideDown 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
         .alert-error { background: var(--danger); color: white; }
         .alert-success { background: var(--success); color: white; }
@@ -955,45 +896,17 @@
         .back-btn { background: none; border: none; color: #2575fc; cursor: pointer; margin-top: 25px; display: inline-flex; align-items: center; gap: 8px; font-size: 1rem; font-weight: bold; transition: all 0.3s; }
         .back-btn:hover { transform: translateX(5px); color: #5da2ec; }
         
-        .empty-state { text-align: center; padding: 50px 20px; color: var(--text-muted); }
+        .empty-state { text-align: center; padding: 50px 20px; color: var(--text-muted); width: 100%; }
         .empty-state i { font-size: 3.5rem; margin-bottom: 15px; opacity: 0.4; }
         .hidden { display: none !important; }
 
-        /* تجميعة الـ Keyframes والأنيميشنز */
-        @keyframes fadeInUp { 
-            from { opacity: 0; transform: translateY(30px); } 
-            to { opacity: 1; transform: translateY(0); } 
-        }
-        
-        @keyframes scaleIn { 
-            from { opacity: 0; transform: scale(0.9); } 
-            to { opacity: 1; transform: scale(1); } 
-        }
-        
-        @keyframes slideDown { 
-            from { top: -100px; opacity: 0; } 
-            to { top: 20px; opacity: 1; } 
-        }
-        
-        @keyframes bounceAndRotate { 
-            0% { transform: translateY(0) rotate(0deg); } 
-            100% { transform: translateY(-15px) rotate(10deg); } 
-        }
-
-        @keyframes pulseGlow {
-            0% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(37, 117, 252, 0.3)); }
-            100% { transform: scale(1.05); filter: drop-shadow(0 0 12px rgba(37, 117, 252, 0.7)); }
-        }
-
-        @keyframes pulseBorder {
-            0% { border-color: rgba(255, 183, 3, 0.2); }
-            100% { border-color: rgba(255, 183, 3, 0.6); box-shadow: 0 0 10px rgba(255, 183, 3, 0.05); }
-        }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            100% { opacity: 0.5; }
-        }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes slideDown { from { top: -100px; opacity: 0; } to { top: 20px; opacity: 1; } }
+        @keyframes bounceAndRotate { 0% { transform: translateY(0) rotate(0deg); } 100% { transform: translateY(-15px) rotate(10deg); } }
+        @keyframes pulseGlow { 0% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(37, 117, 252, 0.3)); } 100% { transform: scale(1.05); filter: drop-shadow(0 0 12px rgba(37, 117, 252, 0.7)); } }
+        @keyframes pulseBorder { 0% { border-color: rgba(255, 183, 3, 0.2); } 100% { border-color: rgba(255, 183, 3, 0.6); box-shadow: 0 0 10px rgba(255, 183, 3, 0.05); } }
+        @keyframes blink { 0% { opacity: 1; } 100% { opacity: 0.5; } }
 
         @media (max-width: 768px) {
             .container { padding: 12px; }
@@ -1011,11 +924,7 @@
     <div class="loading-screen" id="loadingScreen">
         <div class="loader-container">
             <div class="math-symbols">
-                <span>∫</span>
-                <span>∑</span>
-                <span>√</span>
-                <span>π</span>
-                <span>∞</span>
+                <span>∫</span><span>∑</span><span>√</span><span>π</span><span>∞</span>
             </div>
             <h1>الرياضيات في الجيب</h1>
             <p>نظام ذكي متكامل لدمج العلوم الرياضية والتكنولوجية</p>
@@ -1150,9 +1059,8 @@
                 <div class="quick-actions">
                     <button class="quick-btn" onclick="showAddModal('lesson')"><i class="fas fa-plus"></i> درس جديد</button>
                     <button class="quick-btn" onclick="showAddModal('exercise')"><i class="fas fa-plus"></i> تمرين جديد</button>
-                    <button class="quick-btn" onclick="showAddModal('video')"><i class="fas fa-plus"></i> فيديو جديد</button>
-                    <button class="quick-btn" onclick="showQuizBuilder()"><i class="fas fa-plus"></i> اختبار جديد</button>
-                    <button class="quick-btn quick-btn-upload" onclick="showFileUploadModal()"><i class="fas fa-file-upload"></i> رفع ملف تعليمي</button>
+                    <button class="quick-btn" onclick="showQuizBuilder()"><i class="fas fa-plus"></i> اختبار QCM جديد</button>
+                    <button class="quick-btn quick-btn-upload" onclick="showFileUploadModal()"><i class="fas fa-file-upload"></i> رفع ملف / فيديو تعليمي</button>
                 </div>
 
                 <div class="content-list">
@@ -1226,7 +1134,7 @@
 
         <div id="quizResultScreen" class="hidden">
             <div class="quiz-screen quiz-result">
-                <i class="fas fa-trophy" style="font-size: 4rem; color: var(--warning); animation: scaleIn 0.4s ease;"></i>
+                <i class="fas fa-trophy" style="font-size: 4rem; color: var(--warning);"></i>
                 <h2 style="margin: 15px 0;">اكتمل الاختبار المباشر!</h2>
                 <div class="score" id="resultScore">0%</div>
                 <div style="font-size: 1.2rem; color: var(--text-muted);">الإجابات الصحيحة المحققة: <span id="correctCount" style="color: white; font-weight: bold;">0</span> من <span id="totalCount">0</span></div>
@@ -1238,14 +1146,14 @@
     <div class="modal hidden" id="addModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 id="modalTitle">إضافة محتوى رقمي</h3>
+                <h3 id="modalTitle">إضافة محتوى رقمي مقالي</h3>
                 <button class="close-modal" onclick="closeModal()">×</button>
             </div>
             <form id="addForm" onsubmit="addContent(event)">
                 <input type="hidden" id="contentTypeInput">
                 <div class="form-group">
-                    <label>اسم المحتوى الرياضي</label>
-                    <input type="text" id="contentName" required>
+                    <label>اسم المحتوى الرياضي (نصي)</label>
+                    <input type="text" id="contentName" required placeholder="مثال: مدخل إلى عموميات الدوال">
                 </div>
                 <div class="form-group">
                     <label>المستوى الدراسي المستهدف</label>
@@ -1256,10 +1164,10 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>وصف موجز للمادة العلمية (اختياري)</label>
-                    <textarea id="contentDesc" rows="3"></textarea>
+                    <label>اكتب نص المحاضرة أو المسألة هنا مباشرة</label>
+                    <textarea id="contentDesc" rows="5" placeholder="يمكنك صياغة الرموز هنا بـ MathJax"></textarea>
                 </div>
-                <button type="submit" class="submit-btn">تأكيد الإضافة والرفع</button>
+                <button type="submit" class="submit-btn">تأكيد الحفظ بالمنصة</button>
             </form>
         </div>
     </div>
@@ -1267,21 +1175,21 @@
     <div class="modal hidden" id="fileUploadModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>📎 رفع ملف منهجي أو وثيقة رقمية</h3>
+                <h3>📎 رفع ملف منهجي أو فيديو للطلاب</h3>
                 <button class="close-modal" onclick="closeFileUploadModal()">×</button>
             </div>
             <form id="fileUploadForm" onsubmit="uploadFile(event)">
                 <div class="form-group">
-                    <label>نوع التبويب</label>
-                    <select id="fileContentType" required>
-                        <option value="lessons">محاضرة / درس</option>
-                        <option value="exercises">سلسلة تمارين</option>
-                        <option value="videos">شرح مرئي</option>
+                    <label>نوع التبويب المستهدف</label>
+                    <select id="fileContentType" required onchange="updateUploadLabels()">
+                        <option value="lessons">محاضرة / درس (مستند PDF)</option>
+                        <option value="exercises">سلسلة تمارين ومسائل (مستند PDF)</option>
+                        <option value="videos">شرح مرئي متحرك (فيديو مباشر للمشاهدة)</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>عنوان الوثيقة أو الفيديو</label>
-                    <input type="text" id="fileTitle" required placeholder="مثال: درس الحسابيات - جذع مشترك">
+                    <label>عنوان المحتوى التعليمي</label>
+                    <input type="text" id="fileTitle" required placeholder="مثال: الهندسة الفضائية - الدوران">
                 </div>
                 <div class="form-group">
                     <label>المستوى المستهدف</label>
@@ -1292,20 +1200,22 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>وصف توضيحي للطلاب</label>
-                    <textarea id="fileDesc" rows="2"></textarea>
+                    <label>وصف توضيحي أو تعليق مرافق</label>
+                    <textarea id="fileDesc" rows="2" placeholder="أضف وصفاً أو نصاً مرافقاً للمادة..."></textarea>
                 </div>
-                <div class="form-group">
-                    <label>الملف العلمي المستهدف (PDF، صورة، فيديو)</label>
-                    <div class="file-upload-area" id="fileDropZone" onclick="document.getElementById('actualFile').click()">
+
+                <div class="form-group" id="documentFileArea">
+                    <label id="fileInputLabel">الملف المستهدف (PDF أو فيديو MP4)</label>
+                    <div class="file-upload-area" id="fileDropZone" onclick="triggerFileSelect()">
                         <i class="fas fa-cloud-upload-alt fa-2x" style="color: #2575fc; margin-bottom: 10px;"></i>
-                        <p>اضغط لاختيار الوثيقة أو اسحبها هنا مباشرة</p>
-                        <small style="color: var(--text-muted);">(الملفات المدعومة: PDF, JPG, PNG, MP4)</small>
+                        <p id="uploadZoneText">اضغط هنا لتحديد الملف من جهازك مباشرة</p>
+                        <small id="uploadZoneSubtext">(المنصة تدعم الآن الملفات الكبيرة بفضل نظام التخزين العملاق)</small>
                     </div>
-                    <input type="file" id="actualFile" style="display: none;" accept=".pdf,.jpg,.jpeg,.png,.mp4,.webm">
+                    <input type="file" id="actualFile" style="display: none;" accept=".pdf,.jpg,.jpeg,.png,.mp4,.webm,.avi">
                     <div id="selectedFileName" style="margin-top: 10px; font-size: 0.85rem; color: #28a745; font-weight: bold;"></div>
                 </div>
-                <button type="submit" class="submit-btn">حفظ وتعميم على المنصة</button>
+
+                <button type="submit" class="submit-btn" style="margin-top:10px;">تأكيد وتعميم بالمنصة</button>
             </form>
         </div>
     </div>
@@ -1339,11 +1249,32 @@
     </div>
 
     <script>
+        // مصفوفة لتخزين الكتل النصية العادية، بينما الملفات الكبيرة ستخزن في قاعدة بيانات IndexedDB
         let appData = { lessons: [], exercises: [], videos: [], quizzes: [] };
         let currentUser = null, currentUserType = null, currentContentType = null;
         let currentQuiz = null, currentQuestionIndex = 0, userAnswers = [], quizTimer = null;
         let timeLeft = 1800, studentLevelFilter = 'all', quizLevelFilter = 'all', adminTypeFilter = 'all';
         let questionsBuilder = [], selectedFile = null;
+
+        // إعداد وتأسيس قاعدة البيانات العملاقة IndexedDB للمتصفح لدعم الملفات الكبيرة والفيديوهات المباشرة
+        let db = null;
+        const dbRequest = indexedDB.open("PocketMathDB", 1);
+        
+        dbRequest.onupgradeneeded = function(e) {
+            let database = e.target.result;
+            if (!database.objectStoreNames.contains("filesStore")) {
+                database.createObjectStore("filesStore", { keyPath: "id" });
+            }
+        };
+
+        dbRequest.onsuccess = function(e) {
+            db = e.target.result;
+            loadData(); // تحميل البيانات النصية بعد جهوزية قاعدة البيانات ثنائية الأبعاد
+        };
+
+        dbRequest.onerror = function() {
+            console.error("IndexedDB initialization failed.");
+        };
 
         const dailyChallenges = {
             common: {
@@ -1369,17 +1300,47 @@
             const saved = localStorage.getItem('mathAppData');
             if (saved) appData = JSON.parse(saved);
             updateStats();
+            if (currentUserType === 'admin') renderAdminContent();
         }
 
         function saveData() {
             localStorage.setItem('mathAppData', JSON.stringify(appData));
             updateStats();
-            if (currentUserType === 'admin') {
-                renderAdminContent();
-            } else if (currentUserType === 'student') {
+            if (currentUserType === 'admin') renderAdminContent();
+            else if (currentUserType === 'student') {
                 if (currentContentType) renderStudentContent();
                 if (!document.getElementById('quizzesList').classList.contains('hidden')) renderQuizzesList();
             }
+        }
+
+        // دالة حفظ ثنائية آمنة لحفظ الفيديوهات والمستندات الضخمة بالـ IndexedDB
+        function saveFileToIndexedDB(id, fileBlob, callback) {
+            let transaction = db.transaction(["filesStore"], "readwrite");
+            let store = transaction.objectStore("filesStore");
+            let request = store.put({ id: id, file: fileBlob });
+            request.onsuccess = () => callback(true);
+            request.onerror = () => callback(false);
+        }
+
+        // دالة جلب الملف الثنائي الأصلي لتشغيله أو معاينته فوراً داخل الموقع
+        function getFileFromIndexedDB(id, callback) {
+            if(!db) return callback(null);
+            let transaction = db.transaction(["filesStore"], "readonly");
+            let store = transaction.objectStore("filesStore");
+            let request = store.get(id);
+            request.onsuccess = function(e) {
+                if(e.target.result) callback(e.target.result.file);
+                else callback(null);
+            };
+            request.onerror = () => callback(null);
+        }
+
+        // حذف الملف من قاعدة البيانات الكبيرة عند ضغط زر الحذف للأدمن
+        function deleteFileFromIndexedDB(id) {
+            if(!db) return;
+            let transaction = db.transaction(["filesStore"], "readwrite");
+            let store = transaction.objectStore("filesStore");
+            store.delete(id);
         }
 
         function updateStats() {
@@ -1406,11 +1367,8 @@
 
         function selectUserType(type) {
             currentUserType = type;
-            
-            // إضافة حركة خروج سلسة لشاشة الاختيار
             const screen = document.getElementById('userTypeScreen');
-            screen.style.opacity = '0';
-            screen.style.transform = 'scale(1.05)';
+            screen.style.opacity = '0'; screen.style.transform = 'scale(1.05)';
             
             setTimeout(() => {
                 screen.classList.add('hidden');
@@ -1418,8 +1376,7 @@
                     document.getElementById('loginContainer').classList.remove('hidden');
                 } else {
                     currentUser = 'student';
-                    const mainContainer = document.getElementById('mainContainer');
-                    mainContainer.classList.remove('hidden');
+                    document.getElementById('mainContainer').classList.remove('hidden');
                     document.getElementById('portalIndicator').innerHTML = '<i class="fas fa-user"></i> بوابة المتعلم التفاعلية';
                     document.getElementById('featuresGrid').classList.remove('hidden');
                     document.getElementById('dailyChallengeBlock').classList.remove('hidden');
@@ -1433,64 +1390,40 @@
 
         function switchChallengeLevel(level, element) {
             activeChallengeLevel = level;
-            
             document.querySelectorAll('.challenge-level-btn').forEach(btn => btn.classList.remove('active'));
             element.classList.add('active');
             
             const bodyEl = document.getElementById('challengeBody');
             const hintEl = document.getElementById('challengeHint');
-            
-            // تأثير حركي عند تغيير النص
-            bodyEl.style.opacity = '0';
-            hintEl.style.opacity = '0';
+            bodyEl.style.opacity = '0'; hintEl.style.opacity = '0';
             
             setTimeout(() => {
                 bodyEl.innerHTML = dailyChallenges[level].body;
                 hintEl.innerHTML = `<i class="far fa-lightbulb"></i> ` + dailyChallenges[level].hint;
                 document.getElementById('challengeInput').value = '';
-                
-                bodyEl.style.transition = 'opacity 0.3s';
-                hintEl.style.transition = 'opacity 0.3s';
-                bodyEl.style.opacity = '1';
-                hintEl.style.opacity = '1';
-                
-                if (window.MathJax && window.MathJax.typesetPromise) {
-                    MathJax.typesetPromise([document.getElementById('dailyChallengeBlock')]).catch(function (err) {
-                        console.log("MathJax failed: " + err.message);
-                    });
-                }
+                bodyEl.style.opacity = '1'; hintEl.style.opacity = '1';
+                if (window.MathJax && window.MathJax.typesetPromise) { MathJax.typesetPromise([document.getElementById('dailyChallengeBlock')]).catch(()=>null); }
             }, 200);
         }
 
         function checkChallengeAnswer() {
             const userAnswer = document.getElementById('challengeInput').value.trim();
             const correctAnswer = dailyChallenges[activeChallengeLevel].correctAnswer;
-            
-            if (!userAnswer) {
-                showAlert('من فضلك صغ جواباً أولاً قبل الإرسال.', 'error');
-                return;
-            }
-            
-            if (userAnswer === correctAnswer) {
-                showAlert('🎉 برهان وعقل صريح! جوابك صحيح ومطابق للمنهج الرياضي الصارم.', 'success');
-            } else {
-                showAlert('❌ محاولة تحتاج مراجعة؛ تأكد من التلميح والشروط وصيغة الكتابة ثم حاول مجدداً.', 'error');
-            }
+            if (!userAnswer) { showAlert('من فضلك صغ جواباً أولاً قبل الإرسال.', 'error'); return; }
+            if (userAnswer === correctAnswer) showAlert('🎉 برهان وعقل صريح! جوابك صحيح ومطابق للمنهج الرياضي الصارم.', 'success');
+            else showAlert('❌ محاولة تحتاج مراجعة؛ تأكد من التلميح والشروط وصيغة الكتابة ثم حاول مجدداً.', 'error');
         }
 
         function hideLogin() {
             document.getElementById('loginContainer').classList.add('hidden');
             const screen = document.getElementById('userTypeScreen');
-            screen.classList.remove('hidden');
-            screen.style.opacity = '1';
-            screen.style.transform = 'scale(1)';
+            screen.classList.remove('hidden'); screen.style.opacity = '1'; screen.style.transform = 'scale(1)';
         }
 
         function handleLogin(e) {
             e.preventDefault();
             const username = document.getElementById('loginUsername').value;
             const password = document.getElementById('loginPassword').value;
-            
             if (username === 'admin' && password === 'admin123') {
                 currentUser = username;
                 document.getElementById('loginContainer').classList.add('hidden');
@@ -1500,42 +1433,29 @@
                 document.getElementById('dailyChallengeBlock').classList.add('hidden');
                 document.getElementById('wisdomBar').classList.add('hidden');
                 document.getElementById('adminPanel').classList.remove('hidden');
-                loadData();
-                renderAdminContent();
+                loadData(); renderAdminContent();
                 showAlert('مرحباً بك أستاذ، تم الدخول بنجاح.', 'success');
-            } else {
-                showAlert('خطأ: بيانات الدخول سرية وغير مطابقة لمسؤول النظام.', 'error');
-            }
+            } else showAlert('خطأ: بيانات الدخول سرية وغير مطابقة لمسؤول النظام.', 'error');
         }
 
         function showAlert(message, type) {
             document.querySelectorAll('.alert').forEach(el => el.remove());
-            const alert = document.createElement('div');
-            alert.className = `alert alert-${type}`;
+            const alert = document.createElement('div'); alert.className = `alert alert-${type}`;
             alert.innerHTML = `<i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i> ${message}`;
             document.body.appendChild(alert);
-            setTimeout(() => {
-                alert.style.animation = 'fadeInUp 0.3s reverse ease-in forwards';
-                setTimeout(() => alert.remove(), 300);
-            }, 3000);
+            setTimeout(() => { alert.style.animation = 'fadeInUp 0.3s reverse ease-in forwards'; setTimeout(() => alert.remove(), 300); }, 3000);
         }
 
         function logout() {
             currentUser = null; currentUserType = null;
             document.getElementById('mainContainer').classList.add('hidden');
             const screen = document.getElementById('userTypeScreen');
-            screen.classList.remove('hidden');
-            screen.style.opacity = '1';
-            screen.style.transform = 'scale(1)';
-            document.getElementById('loginUsername').value = '';
-            document.getElementById('loginPassword').value = '';
+            screen.classList.remove('hidden'); screen.style.opacity = '1'; screen.style.transform = 'scale(1)';
         }
 
         function triggerSectionAnimate(targetId) {
             const target = document.getElementById(targetId);
-            target.classList.remove('section-animate');
-            void target.offsetWidth; // الخدعة السحرية لإعادة تشغيل الأنيميشن في المتصفح
-            target.classList.add('section-animate');
+            target.classList.remove('section-animate'); void target.offsetWidth; target.classList.add('section-animate');
         }
 
         function showContent(type) {
@@ -1544,21 +1464,18 @@
             document.getElementById('dailyChallengeBlock').classList.add('hidden');
             document.getElementById('contentViewer').classList.remove('hidden');
             triggerSectionAnimate('contentViewer');
-            
-            const titles = { lessons: '📖 المحاضرات والدروس', exercises: '✏️ سلاسل ومسائل التمارين', videos: '🎥 الشروحات والسيناريوهات المرئية' };
+            const titles = { lessons: '📖 المحاضرات والدروس', exercises: '✏️ سلاسل ومسائل التمارين', videos: '🎥 الشروحات والسيناريوهات المرئية المباشرة' };
             document.getElementById('contentViewerTitle').textContent = titles[type];
-            studentLevelFilter = 'all';
-            renderStudentContent();
-            document.getElementById('studentSearch').oninput = () => renderStudentContent();
+            studentLevelFilter = 'all'; renderStudentContent();
         }
 
         function filterStudentLevel(level) {
             studentLevelFilter = level;
             document.querySelectorAll('#contentViewer .level-tab').forEach(tab => tab.classList.remove('active'));
-            event.target.classList.add('active');
-            renderStudentContent();
+            event.target.classList.add('active'); renderStudentContent();
         }
 
+        /* 🎬 واجهة المتعلم الذكية والمحدثة لتوليد مشغل مباشر مدمج آمن للفيديوهات من الـ IndexedDB */
         function renderStudentContent() {
             const search = document.getElementById('studentSearch')?.value.toLowerCase() || '';
             let items = appData[currentContentType].filter(item => {
@@ -1573,66 +1490,91 @@
                 return;
             }
             
-            container.innerHTML = items.map((item, index) => `
-                <div class="content-item" style="animation: fadeInUp 0.3s ease forwards; animation-delay: ${index * 0.05}s;">
-                    <div class="item-info">
-                        <div class="item-title">${item.name}</div>
-                        <div class="item-meta">
-                            <span>${item.level === 'common' ? '📗 جذع مشترك' : item.level === 'first' ? '📘 أولى باك' : '📙 ثانية باك'}</span>
-                            <span>${item.desc || ''}</span>
-                            ${item.fileData ? `<button class="file-link" onclick="downloadFile('${item.fileData}', '${item.fileName}')"><i class="fas fa-download"></i> تحميل الوثيقة</button>` : ''}
+            container.innerHTML = items.map((item, index) => {
+                const isVideoTab = currentContentType === 'videos' || (item.fileType && item.fileType.startsWith('video/'));
+                const elementId = `student-media-box-${item.fileId}`;
+
+                return `
+                    <div class="content-item" style="animation: fadeInUp 0.3s ease forwards; animation-delay: ${index * 0.05}s; flex-direction: column; align-items: flex-start; gap: 15px; width:100%;">
+                        <div class="item-info" style="width: 100%;">
+                            <div class="item-title">${item.name}</div>
+                            <div class="item-meta" style="margin-bottom: 5px;">
+                                <span>${item.level === 'common' ? '📗 جذع مشترك' : item.level === 'first' ? '📘 أولى باك' : '📙 ثانية باك'}</span>
+                                <span>${item.desc || ''}</span>
+                            </div>
+                        </div>
+                        <div class="item-media-action" id="${elementId}" style="width: 100%;">
+                            <span style="color:var(--text-muted); font-size:0.85rem;"><i class="fas fa-spinner fa-spin"></i> جاري استدعاء الملف العلمي...</span>
                         </div>
                     </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
+
+            // توليد الروابط الثنائية اللحظية (Object URLs) لعرض الفيديوهات وملفات الـ PDF داخل المنصة
+            items.forEach(item => {
+                if (!item.fileId) return;
+                getFileFromIndexedDB(item.fileId, function(fileBlob) {
+                    const el = document.getElementById(`student-media-box-${item.fileId}`);
+                    if (!el) return;
+                    if (!fileBlob) {
+                        el.innerHTML = `<span style="color:var(--danger); font-size:0.85rem;"><i class="fas fa-exclamation-triangle"></i> تعذر تحميل الملف</span>`;
+                        return;
+                    }
+
+                    const objectUrl = URL.createObjectURL(fileBlob);
+                    const isVideo = item.fileType && item.fileType.startsWith('video/');
+
+                    if (isVideo) {
+                        el.innerHTML = `
+                            <div style="width: 100%; max-width: 550px; border-radius: 14px; overflow: hidden; background: #000; box-shadow: 0 8px 25px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05);">
+                                 <video src="${objectUrl}" controls style="width: 100%; display: block;" preload="metadata"></video>
+                            </div>`;
+                    } else {
+                        el.innerHTML = `
+                            <button class="file-link" onclick="downloadBlobFile('${objectUrl}', '${item.fileName}')">
+                                 <i class="fas fa-download"></i> تحميل ومراجعة وثيقة الـ PDF
+                            </button>`;
+                    }
+                });
+            });
         }
 
-        function downloadFile(fileData, fileName) {
-            try {
-                const link = document.createElement('a');
-                link.href = fileData; link.download = fileName;
-                document.body.appendChild(link); link.click(); document.body.removeChild(link);
-                showAlert(`جاري تنزيل الملف المنهجي بشكل آمن.`, 'success');
-            } catch (error) {
-                showAlert('لم نتمكن من معالجة تحميل الملف.', 'error');
-            }
+        function downloadBlobFile(objectUrl, fileName) {
+            const link = document.createElement('a'); link.href = objectUrl; link.download = fileName;
+            document.body.appendChild(link); link.click(); document.body.removeChild(link);
+            showAlert(`جاري فتح وتحميل الوثيقة بنجاح.`, 'success');
         }
 
         function showQuizzesList() {
             document.getElementById('featuresGrid').classList.add('hidden');
             document.getElementById('dailyChallengeBlock').classList.add('hidden');
             document.getElementById('quizzesList').classList.remove('hidden');
-            triggerSectionAnimate('quizzesList');
-            quizLevelFilter = 'all';
-            renderQuizzesList();
+            triggerSectionAnimate('quizzesList'); quizLevelFilter = 'all'; renderQuizzesList();
         }
 
         function filterQuizLevel(level) {
             quizLevelFilter = level;
             document.querySelectorAll('#quizzesList .level-tab').forEach(tab => tab.classList.remove('active'));
-            event.target.classList.add('active');
-            renderQuizzesList();
+            event.target.classList.add('active'); renderQuizzesList();
         }
 
         function renderQuizzesList() {
             const container = document.getElementById('quizzesGrid');
             let filteredQuizzes = appData.quizzes.filter(quiz => quizLevelFilter === 'all' || quiz.level === quizLevelFilter);
-            
             if (filteredQuizzes.length === 0) {
                 container.innerHTML = `<div class="empty-state"><i class="fas fa-inbox"></i><p>لا توجد اختبارات تفاعلية مضافة لهذا المستوى.</p></div>`;
                 return;
             }
-            
             container.innerHTML = filteredQuizzes.map((quiz, index) => `
-                <div class="content-item" onclick="startQuiz(${appData.quizzes.indexOf(quiz)})" style="cursor: pointer; animation: fadeInUp 0.3s ease forwards; animation-delay: ${index * 0.05}s;">
+                <div class="content-item" onclick="startQuiz(${appData.quizzes.indexOf(quiz)})" style="cursor: pointer;">
                     <div class="item-info">
                         <div class="item-title">📋 ${quiz.name}</div>
                         <div class="item-meta">
                             <span>${quiz.level === 'common' ? '📗 جذع مشترك' : quiz.level === 'first' ? '📘 أولى باك' : '📙 ثانية باك'}</span>
-                            <span>${quiz.questions?.length || 0} سؤال تفاعلي</span>
+                            <span>${quiz.questions?.length || 0} سؤال</span>
                         </div>
                     </div>
-                    <i class="fas fa-play-circle" style="font-size: 1.8rem; color: #2575fc; transition: transform 0.3s;"></i>
+                    <i class="fas fa-play-circle" style="font-size: 1.8rem; color: #2575fc;"></i>
                 </div>
             `).join('');
         }
@@ -1640,11 +1582,9 @@
         function startQuiz(index) {
             currentQuiz = JSON.parse(JSON.stringify(appData.quizzes[index]));
             currentQuestionIndex = 0; userAnswers = new Array(currentQuiz.questions.length).fill(null);
-            timeLeft = 1800;
-            document.getElementById('quizzesList').classList.add('hidden');
+            timeLeft = 1800; document.getElementById('quizzesList').classList.add('hidden');
             document.getElementById('quizInterface').classList.remove('hidden');
-            triggerSectionAnimate('quizInterface');
-            document.getElementById('quizTitleDisplay').textContent = currentQuiz.name;
+            triggerSectionAnimate('quizInterface'); document.getElementById('quizTitleDisplay').textContent = currentQuiz.name;
             startTimer(); renderQuestion();
         }
 
@@ -1664,13 +1604,9 @@
             const question = currentQuiz.questions[currentQuestionIndex];
             document.getElementById('questionText').textContent = question.text;
             const container = document.getElementById('optionsContainer');
-            
             container.innerHTML = question.options.map((opt, idx) => `
-                <div class="quiz-option ${userAnswers[currentQuestionIndex] === idx ? 'selected' : ''}" onclick="selectOption(${idx})" style="animation: scaleIn 0.25s ease forwards; animation-delay: ${idx * 0.05}s;">
-                    ${opt}
-                </div>
+                <div class="quiz-option ${userAnswers[currentQuestionIndex] === idx ? 'selected' : ''}" onclick="selectOption(${idx})">${opt}</div>
             `).join('');
-            
             document.getElementById('prevBtn').style.display = currentQuestionIndex === 0 ? 'none' : 'block';
             document.getElementById('nextBtn').style.display = currentQuestionIndex === currentQuiz.questions.length - 1 ? 'none' : 'block';
             document.getElementById('submitBtn').style.display = currentQuestionIndex === currentQuiz.questions.length - 1 ? 'block' : 'none';
@@ -1689,9 +1625,9 @@
             document.getElementById('totalCount').textContent = currentQuiz.questions.length;
             document.getElementById('quizInterface').classList.add('hidden');
             document.getElementById('quizResultScreen').classList.remove('hidden');
-            triggerSectionAnimate('quizResultScreen');
         }
 
+        /* واجهة تحكم المعلم المحدثة لمعاينة الفيديوهات الكبيرة المرفوعة */
         function renderAdminContent() {
             const search = document.getElementById('searchInput')?.value.toLowerCase() || '';
             const level = document.getElementById('levelFilter')?.value || 'all';
@@ -1701,38 +1637,57 @@
                     appData[type].forEach((item, idx) => { allItems.push({ type, idx, ...item }); });
                 }
             });
-            
             allItems = allItems.filter(item => {
                 const matchSearch = item.name.toLowerCase().includes(search);
                 const matchLevel = level === 'all' || item.level === level;
                 return matchSearch && matchLevel;
             });
-            
             const container = document.getElementById('contentItems');
             if (allItems.length === 0) {
-                container.innerHTML = `<div class="empty-state"><i class="fas fa-folder-open"></i><p>اللوحة فارغة، أضف ملفاتك المنهجية أو الاختبارات الآن لتظهر هنا.</p></div>`;
+                container.innerHTML = `<div class="empty-state"><i class="fas fa-folder-open"></i><p>اللوحة فارغة.</p></div>`;
                 return;
             }
-            
-            container.innerHTML = allItems.map((item, index) => `
-                <div class="content-item" style="animation: fadeInUp 0.3s ease forwards; animation-delay: ${index * 0.03}s;">
-                    <div class="item-info">
-                        <div class="item-title">
-                            ${item.type === 'lessons' ? '📖' : item.type === 'exercises' ? '✏️' : item.type === 'videos' ? '🎥' : '📋'} ${item.name}
+            container.innerHTML = allItems.map((item, index) => {
+                const adminPreviewId = `admin-preview-${item.fileId}`;
+                return `
+                    <div class="content-item" style="flex-direction: column; align-items: flex-start; gap: 12px; width:100%;">
+                        <div style="display: flex; justify-content: space-between; width: 100%; align-items: center; flex-wrap: wrap;">
+                            <div class="item-info">
+                                <div class="item-title">
+                                    ${item.type === 'lessons' ? '📖' : item.type === 'exercises' ? '✏️' : item.type === 'videos' ? '🎥' : '📋'} ${item.name}
+                                </div>
+                                <div class="item-meta">
+                                    <span>${item.level === 'common' ? 'جذع مشترك' : item.level === 'first' ? 'أولى باك' : 'ثانية باك'}</span>
+                                    <span>${item.desc || ''}</span>
+                                </div>
+                            </div>
+                            <button class="delete-item" onclick="deleteContent('${item.type}', ${item.idx}, '${item.fileId}')"><i class="fas fa-trash"></i> حذف</button>
                         </div>
-                        <div class="item-meta">
-                            <span>${item.level === 'common' ? 'جذع مشترك' : item.level === 'first' ? 'ألي باك' : 'ثانية باك'}</span>
-                            ${item.fileData ? `<span><button class="file-link" onclick="downloadFile('${item.fileData}', '${item.fileName}')"><i class="fas fa-download"></i> مراجعة الملف</button></span>` : ''}
-                        </div>
+                        <div id="${adminPreviewId}" style="width:100%;"></div>
                     </div>
-                    <button class="delete-item" onclick="deleteContent('${item.type}', ${item.idx})"><i class="fas fa-trash"></i> حذف نهائي</button>
-                </div>
-            `).join('');
+                `;
+            }).join('');
+
+            // إدراج مشغلات الفيديو اللحظية في لوحة المشرف ليتأكد من جودة الفيديو المرفوع فورا
+            allItems.forEach(item => {
+                if(!item.fileId) return;
+                getFileFromIndexedDB(item.fileId, function(fileBlob) {
+                    const el = document.getElementById(`admin-preview-${item.fileId}`);
+                    if (!el || !fileBlob) return;
+                    
+                    const objectUrl = URL.createObjectURL(fileBlob);
+                    if (item.fileType && item.fileType.startsWith('video/')) {
+                        el.innerHTML = `<video src="${objectUrl}" controls style="width:100%; max-width:280px; border-radius:8px; display:block; max-height:150px; background:#000;"></video>`;
+                    } else {
+                        el.innerHTML = `<span style="font-size:0.8rem; color:var(--success);"><i class="fas fa-file-pdf"></i> مستند مدرج وجاهز للعرض</span>`;
+                    }
+                });
+            });
         }
 
         function filterByType(type) { adminTypeFilter = type; renderAdminContent(); }
         function showAddModal(type) {
-            document.getElementById('modalTitle').textContent = type === 'lesson' ? '📖 إضافة محاضرة / درس جديد' : type === 'exercise' ? '✏️ إضافة تمرين / مسألة' : '🎥 إضافة خلية شرح مرئي';
+            document.getElementById('modalTitle').textContent = type === 'lesson' ? '📖 إضافة محاضرة جديدة' : '✏️ إضافة تمرين جديد';
             document.getElementById('contentTypeInput').value = type;
             document.getElementById('addModal').classList.remove('hidden');
         }
@@ -1744,52 +1699,91 @@
             const name = document.getElementById('contentName').value;
             const level = document.getElementById('contentLevel').value;
             const desc = document.getElementById('contentDesc').value;
-            
             appData[type].push({ name, level, desc, date: new Date().toISOString() });
-            saveData(); closeModal(); renderAdminContent();
-            showAlert('تم حفظ المحتوى الهيكلي للمنصة.', 'success');
+            saveData(); closeModal();
+            showAlert('تم حفظ المحتوى المقالي بنجاح.', 'success');
         }
 
-        function deleteContent(type, index) {
-            if (confirm('هل أنت متأكد من مسح هذه المادة العلمية؟')) {
-                appData[type].splice(index, 1); saveData(); renderAdminContent();
-                showAlert('تم حذف البيانات وتحديث العدادات.', 'success');
+        function deleteContent(type, index, fileId) {
+            if (confirm('هل أنت متأكد من مسح المادة العلمية؟')) {
+                appData[type].splice(index, 1);
+                if (fileId) deleteFileFromIndexedDB(fileId);
+                saveData();
+                showAlert('تم حذف البيانات وتحديث اللوحة.', 'success');
             }
         }
 
+        function triggerFileSelect() { document.getElementById('actualFile').click(); }
         function showFileUploadModal() {
             selectedFile = null; document.getElementById('selectedFileName').innerHTML = '';
             document.getElementById('fileUploadForm').reset();
+            document.getElementById('fileUploadModal').classList.remove('hidden');
+            updateUploadLabels();
+        }
+
+        function updateUploadLabels() {
+            const type = document.getElementById('fileContentType').value;
+            const label = document.getElementById('fileInputLabel');
+            const zoneText = document.getElementById('uploadZoneText');
+            const actualFileInput = document.getElementById('actualFile');
+            
+            if(type === 'videos') {
+                label.textContent = "اختر ملف الفيديو التعليمي (MP4 / WebM)";
+                zoneText.textContent = "اضغط هنا لتحديد مقطع الفيديو من جهازك مباشرة";
+                actualFileInput.accept = ".mp4,.webm,.ogg,.mov";
+            } else {
+                label.textContent = "اختر مستند المادة العلمية (PDF أو صور)";
+                zoneText.textContent = "اضغط هنا لتحديد مستند الـ PDF أو الصورة";
+                actualFileInput.accept = ".pdf,.jpg,.jpeg,.png";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
             const fileInput = document.getElementById('actualFile');
             if (fileInput) {
-                fileInput.value = '';
-                fileInput.onchange = function(e) {
+                fileInput.addEventListener('change', function(e) {
                     if (e.target.files.length > 0) {
                         selectedFile = e.target.files[0];
-                        document.getElementById('selectedFileName').innerHTML = `<i class="fas fa-check-circle"></i> ${selectedFile.name} (${(selectedFile.size / 1024).toFixed(2)} KB)`;
+                        document.getElementById('selectedFileName').innerHTML = `<i class="fas fa-check-circle"></i> ${selectedFile.name} (${(selectedFile.size / (1024*1024)).toFixed(2)} MB)`;
                     }
-                };
+                });
             }
-            document.getElementById('fileUploadModal').classList.remove('hidden');
-        }
+        });
 
         function closeFileUploadModal() { document.getElementById('fileUploadModal').classList.add('hidden'); selectedFile = null; }
 
+        /* دالة رفع وحفظ الملفات الكبيرة والوسائط بنظام IndexedDB الثنائي اللحظي المستقر */
         function uploadFile(e) {
             e.preventDefault();
-            if (!selectedFile) { showAlert('يرجى اختيار وثيقة أو فيديو للرفع أولاً.', 'error'); return; }
+            if (!selectedFile) { showAlert('يرجى اختيار الملف المراد رفعه أولاً.', 'error'); return; }
+            
             const contentType = document.getElementById('fileContentType').value;
             const title = document.getElementById('fileTitle').value;
             const level = document.getElementById('fileLevel').value;
             const desc = document.getElementById('fileDesc').value;
             
-            const reader = new FileReader();
-            reader.onload = function(event) {
-                appData[contentType].push({ name: title, level: level, desc: desc || `ملف: ${selectedFile.name}`, fileData: event.target.result, fileName: selectedFile.name, fileType: selectedFile.type, date: new Date().toISOString() });
-                saveData(); closeFileUploadModal(); renderAdminContent();
-                showAlert('تم رفع وحفظ الملف المنهجي بنجاح.', 'success');
-            };
-            reader.readAsDataURL(selectedFile);
+            // توليد معرف فريد وثابت للملف المستهدف برمجياً لربطه مع الـ IndexedDB
+            const uniqueFileId = "file_" + Date.now() + "_" + Math.floor(Math.random()*1000);
+            
+            showAlert('جاري معالجة وحفظ الملف الضخم بالمنصة، يرجى الانتظار لحظة...', 'success');
+            
+            saveFileToIndexedDB(uniqueFileId, selectedFile, function(success) {
+                if(success) {
+                    appData[contentType].push({ 
+                        name: title, 
+                        level: level, 
+                        desc: desc || `ملف مدرج: ${selectedFile.name}`, 
+                        fileId: uniqueFileId,
+                        fileName: selectedFile.name, 
+                        fileType: selectedFile.type, 
+                        date: new Date().toISOString() 
+                    });
+                    saveData(); closeFileUploadModal();
+                    showAlert('تم حفظ الملف وتعميمه على واجهة الطلاب بنجاح وبشكل مباشر! 🎉', 'success');
+                } else {
+                    showAlert('تعذر حفظ الملف بسبب نقص مساحة التخزين في متصفحك.', 'error');
+                }
+            });
         }
 
         function showQuizBuilder() { questionsBuilder = []; document.getElementById('questionsBuilder').innerHTML = ''; addQuestionToBuilder(); document.getElementById('quizBuilderModal').classList.remove('hidden'); }
@@ -1829,10 +1823,9 @@
             const title = document.getElementById('newQuizTitle').value;
             const level = document.getElementById('newQuizLevel').value;
             const validQuestions = questionsBuilder.filter(q => q.text.trim() !== '' && q.options.filter(opt => opt && opt.trim() !== '').length >= 2);
-            
             if (validQuestions.length === 0) { showAlert('يرجى صياغة سؤال واحد على الأقل للاختبار.', 'error'); return; }
             appData.quizzes.push({ name: title, level: level, questions: validQuestions, date: new Date().toISOString() });
-            saveData(); closeQuizBuilder(); renderAdminContent();
+            saveData(); closeQuizBuilder();
             showAlert('تم إدراج الـ QCM في بنك التقييمات بنجاح.', 'success');
         }
 
@@ -1841,14 +1834,8 @@
             document.getElementById('quizzesList').classList.add('hidden');
             document.getElementById('quizInterface').classList.add('hidden');
             document.getElementById('quizResultScreen').classList.add('hidden');
-            
             document.getElementById('featuresGrid').classList.remove('hidden');
-            triggerSectionAnimate('featuresGrid');
-            
-            if (currentUserType === 'student') {
-                document.getElementById('dailyChallengeBlock').classList.remove('hidden');
-                triggerSectionAnimate('dailyChallengeBlock');
-            }
+            if (currentUserType === 'student') document.getElementById('dailyChallengeBlock').classList.remove('hidden');
             if (quizTimer) clearInterval(quizTimer);
         }
 
